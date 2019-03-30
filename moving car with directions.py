@@ -81,6 +81,8 @@ def draw():
     glVertex(-50, 2, -50)
     glEnd()
 
+#*******************************************************************************    
+    
     # Road
     glBegin(GL_POLYGON)
     glColor3f(0.45, 0.45, 0.45)
@@ -122,8 +124,7 @@ def draw():
     glVertex(-25, -1, -0.3)
     glEnd()
 
-
-
+#*******************************************************************************   
 
     #Car
     glColor3f(1, 1, 1)
@@ -154,7 +155,8 @@ def draw():
     glRotate(angle, 0, 0, 1)
     glutSolidTorus(0.15, 0.5, 12, 10)
 
-
+#*******************************************************************************   
+    
     #Left Trees
     glLoadIdentity()
     glColor3f(0.7, 0.3, 0)
@@ -162,15 +164,10 @@ def draw():
     glScale(0.08, 0.7, 0.08)
     glutSolidCube(5)
 
-
     glLoadIdentity()
     glColor3f(0.2, 0.6, 0)
     glTranslate(4.25, 2.8, -10)
     glutSolidSphere(1.5, 10, 10)
-
-
-
-
 
     glLoadIdentity()
     glColor3f(0.7, 0.3, 0)
@@ -205,7 +202,7 @@ def draw():
     glTranslate(-13.25, 2.8, -10)
     glutSolidSphere(1.5, 10, 10)
 
-
+#*******************************************************************************   
 
     #Right Trees
     glLoadIdentity()
@@ -223,7 +220,6 @@ def draw():
     glColor3f(0.2, 0.6, 0)
     glTranslate(5.25, 2.8,7)
     glutSolidSphere(1.5, 10, 10)
-
 
 
     glutSwapBuffers()
